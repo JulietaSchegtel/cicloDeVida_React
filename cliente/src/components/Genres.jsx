@@ -1,4 +1,9 @@
 export const Genres = ({genre}) => {
+
+
+
+
+  
   //console.log(genres)
   
   return (

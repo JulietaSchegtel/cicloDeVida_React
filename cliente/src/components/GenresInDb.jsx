@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
+
 import axios from "axios";
+
 import { Genres } from "./Genres";
 
 export const GenresInDb = () => {
+
   const [genres, setGenres] = useState([]);
+
   const [hover, setHover] = useState("");
 
   useEffect(() => {
+    
     const getGenres = async () => {
       try {
         const { data } = await axios.get("http://localhost:3001/api/genres");
